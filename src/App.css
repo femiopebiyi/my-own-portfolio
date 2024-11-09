@@ -23,15 +23,25 @@ body{
   width: 75%;
   margin: 0 auto;
   
-  border: 1px solid red;
+  
 }
 
 .navlinks a{
+  box-shadow: inset 0 0 0 0 #000;
+  padding: .2em .5em;
   margin: 0 2em;
-  color: black;
+  color: #2D3441;
+  border: 1px solid black;
   text-decoration: none;
+  
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
+.navlinks a:hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #000;
+  ;
+}
 .logo h1{
   font-size: 1.5rem;
   letter-spacing: .1em;
@@ -62,4 +72,13 @@ body{
 #nav button:hover {
   color: #000;
   background: rgb(255, 218, 87);
+}
+
+.header-con{
+  height: 100dvh;
+  border: 1px solid black;
+  background: url(./assets/images/home-bg.png);
+  background-position-x: center;
+
+  
 }
