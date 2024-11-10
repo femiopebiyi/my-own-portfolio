@@ -18,13 +18,23 @@ const Home = () => {
         </div>
 
         <div className="socials">
-            <img src={whatsapp} alt="" />
-            <img src={linkedin} alt="" />
-            <img src={reddit} alt="" />
-            <img src={github} alt="" />
-            <img src={twitter} alt="" />
-            
-        </div>
+          <a href="https://wa.me/09066245634" target="_blank" rel="noopener noreferrer">
+            <img src={whatsapp} alt="WhatsApp" />
+          </a>
+          <a href="https://www.linkedin.com/in/opebiyi-femi-005877215/" target="_blank" rel="noopener noreferrer">
+            <img src={linkedin} alt="LinkedIn" />
+          </a>
+          <a href="https://www.reddit.com/user/opebiyifemi/" target="_blank" rel="noopener noreferrer">
+            <img src={reddit} alt="Reddit" />
+          </a>
+          <a href="https://github.com/femiopebiyi" target="_blank" rel="noopener noreferrer">
+            <img src={github} alt="GitHub" />
+          </a>
+          <a href="https://x.com/codewithopebiyi" target="_blank" rel="noopener noreferrer">
+            <img src={twitter} alt="Twitter" />
+          </a>
+</div>
+
       </div>
 
 
