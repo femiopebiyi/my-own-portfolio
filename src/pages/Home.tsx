@@ -4,11 +4,12 @@ import linkedin from "../assets/images/linkedin-logo.png"
 import whatsapp from "../assets/images/whatsapp.png"
 import reddit from "../assets/images/reddit.png"
 import twitter from "../assets/images/twitter.png"
+import Stack from "../components/Stack"
 
 
 
 const Home = () => {
-  return (
+  return ( <>
     <section className="home">
       <div className="home-main">
         <div className="words">
@@ -42,6 +43,12 @@ const Home = () => {
         <img src= {hero_pic} alt="" />
       </div>
     </section>
+
+
+    <section className="stack-con">
+      <Stack/>
+    </section>
+    </>
   )
 }
 
