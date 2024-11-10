@@ -263,8 +263,8 @@ gap: 50px;
 }
 
 .idea-con{
-  border: 1px solid red;
-  padding: 4em 0;
+  /* border: 1px solid red; */
+  padding: 8em 0;
 }
 .idea{
   display: flex;
