@@ -172,9 +172,9 @@ gap: 50px;
 }
 
 .stack-con{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: #000F08;
-  padding: 5em 0;
+  padding: 4em 0;
 }
 .stacks{
   /* border: 1px solid green; */
@@ -197,6 +197,8 @@ gap: 50px;
   font-family: "Plus Jakarta Sans";
   background-color: #000;
   padding-left: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 
   box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0);
     -webkit-box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0);
