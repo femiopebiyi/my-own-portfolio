@@ -3,7 +3,7 @@
 
 const NavBar = () => {
   return (
-    <div className="header-con">
+    
     <header id="nav">
     <div className="navbar">
       <div className="logo">
@@ -21,7 +21,9 @@ const NavBar = () => {
       <button>Get in Touch</button>
     </div>
     </header>
-    </div>
+
+
+    
   )
 }
 

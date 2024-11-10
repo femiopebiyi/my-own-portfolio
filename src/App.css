@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 
 * {
@@ -13,7 +14,8 @@ body{
 
 #nav{
   padding: 16px 0;
-  
+  /* border: 1px solid red; */
+  height: 100px;
 }
 
 .navbar{
@@ -33,7 +35,7 @@ body{
   color: #2D3441;
   border: 1px solid black;
   text-decoration: none;
-  
+  font-weight: 500;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
@@ -74,11 +76,97 @@ body{
   background: rgb(255, 218, 87);
 }
 
-.header-con{
-  height: 100dvh;
-  border: 1px solid black;
+.home{
+  /* border: 2px solid black; */
   background: url(./assets/images/home-bg.png);
   background-position-x: center;
 
+  height: calc(100dvh - 100px);
+  display: flex;
+  align-items: center;
+justify-content: center;  
+gap: 50px;
+}
+
+.home-main{
+  /* border:  2px solid black; */
+  width: 35%;
+}
+
+.hero{
+  /* border: 1px solid green; */
+}
+.hero img{
+  width: 500px;
+}
+
+
+.hero img {
+  width: 500px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+.words h1{
+  font-size: 3.2rem;
+
+  width: 70%;
+  font-family: "Plus Jakarta Sans";
+  color: #111827;
+}
+
+.words p{
+  margin-top: 1.7em;
+  color: #4B5563;
+}
+
+.words button{
+  outline: 0;
+  margin-top: 1.7em;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 3px;
+    color: #fff;
+    background: #000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 16px 20px;
+    text-align: center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.words button:hover {
+  color: #000;
+  background: rgb(255, 218, 87);
+}
+
+.socials{
+  margin-top: 1.7rem;
+}
+
+.socials img{
+  width: 22px;
+  margin: 0 .3em;
+  transition: all 100ms ease-in-out ;
+  cursor: pointer;
+}
+
+.socials img:hover{
+  transform: scale(1.3);
   
 }
