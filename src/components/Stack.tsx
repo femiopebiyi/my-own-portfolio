@@ -1,8 +1,42 @@
 
 import rightArrow from "../assets/images/right-arrow (1).png"
-
+import { useEffect } from "react";
 
 const Stack = () => {
+
+    useEffect(() => {
+    // Create a glowing cursor element
+    const glowingCursor = document.createElement("div");
+    glowingCursor.classList.add("glowing-cursor");
+    document.body.appendChild(glowingCursor);
+
+    // Function to update cursor position
+    const updateCursorPosition = (e: MouseEvent) => {
+      glowingCursor.style.left = `${e.pageX}px`;
+      glowingCursor.style.top = `${e.pageY}px`;
+    };
+
+    // Add mousemove event listener to track cursor
+    document.addEventListener("mousemove", updateCursorPosition);
+
+    // Function to show and hide the glow effect
+    const stacks = document.querySelectorAll(".stack") as NodeListOf<HTMLElement>;
+    stacks.forEach((stack) => {
+      stack.addEventListener("mouseenter", () => {
+        glowingCursor.style.opacity = "1";
+      });
+      stack.addEventListener("mouseleave", () => {
+        glowingCursor.style.opacity = "0";
+      });
+    });
+
+    // Cleanup function to remove event listeners on component unmount
+    return () => {
+      document.removeEventListener("mousemove", updateCursorPosition);
+      document.body.removeChild(glowingCursor);
+    };
+  }, []);
+
   return (
     <div className="stacks">
       <div className="stack">

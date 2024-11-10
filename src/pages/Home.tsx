@@ -5,6 +5,7 @@ import whatsapp from "../assets/images/whatsapp.png"
 import reddit from "../assets/images/reddit.png"
 import twitter from "../assets/images/twitter.png"
 import Stack from "../components/Stack"
+import Idea from "../components/Idea"
 
 
 
@@ -47,6 +48,10 @@ const Home = () => {
 
     <section className="stack-con">
       <Stack/>
+    </section>
+
+    <section className="idea-con">
+      <Idea/>
     </section>
     </>
   )
