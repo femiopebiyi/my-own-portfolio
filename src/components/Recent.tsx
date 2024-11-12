@@ -2,9 +2,19 @@
 import cheesecake from "../assets/images/cheesecake.png"
 import restaurant from "../assets/images/restaurant.png"
 import www from "../assets/images/world-wide-web.png"
+import nftSite from "../assets/images/nft-site.png"
 
 
 const Recent = () => {
+    const restaurantSiteLink = "https://restaurant-eight-coral.vercel.app/"
+    const nftSiteLink = "https://nft-minting-site-two.vercel.app/"
+    const cheesecakeSiteLink = "https://chesscake.onrender.com/"
+
+
+    function openWebsite(siteLink: string) {
+  window.open(siteLink, '_blank'); // Opens in a new tab
+}
+
   return (
     <div className="recent">
       <p className="recent-p">Recent work</p>
@@ -12,7 +22,7 @@ const Recent = () => {
 
       <div className="project-con">
         <div className="project">
-            <div className="visit">
+            <div className="visit" onClick={()=>{openWebsite(restaurantSiteLink)}}>
                     <img src={www} alt="" />
                     <p>Visit Website</p>
                 </div>
@@ -36,7 +46,7 @@ const Recent = () => {
             </div>
         </div>
         <div className="project">
-             <div className="visit">
+             <div className="visit" onClick={()=>{openWebsite(cheesecakeSiteLink)}}>
                     <img src={www} alt="" />
                     <p>Visit Website</p>
                 </div>
@@ -59,16 +69,16 @@ const Recent = () => {
             </div>
         </div>
         <div className="project">
-             <div className="visit">
+             <div className="visit" onClick={()=>{openWebsite(nftSiteLink)}}>
                     <img src={www} alt="" />
                     <p>Visit Website</p>
                 </div>
             <div className="project-img">
-                <img src={restaurant} alt="" />
+                <img src={nftSite} alt="" />
             </div>
 
             <div className="project-main">
-                <h2>Cheesecake Site</h2>
+                <h2>NFT Website</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iure veniam optio.</p>
             </div>
 
