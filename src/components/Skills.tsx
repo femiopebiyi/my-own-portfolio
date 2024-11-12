@@ -8,6 +8,7 @@ import solidity from "../assets/images/icons8-solidity-48.png"
 import typescript from "../assets/images/typescript.png"
 import firebase from "../assets/images/icons8-firebase-48.png"
 import nodeJs from "../assets/images/node-js.png"
+import octagon from "../assets/images/octagon.svg"
 
 
 const Skills = () => {
@@ -17,6 +18,7 @@ const Skills = () => {
       <p className="specialty">I specialize in building responsive websites and scalable web apps, using modern front-end and back-end technologies for seamless performance.</p>
 
       <div className="skill-box">
+        <div className="octagon"><img src={octagon} alt="" /></div>
         <div className="skill-line left">
             <div className="skill">
                 <h3>HTML5</h3>

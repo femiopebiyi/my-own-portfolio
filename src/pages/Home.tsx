@@ -7,6 +7,7 @@ import twitter from "../assets/images/twitter.png"
 import Stack from "../components/Stack"
 import Idea from "../components/Idea"
 import Skills from "../components/Skills"
+import Recent from "../components/Recent"
 
 
 
@@ -57,6 +58,10 @@ const Home = () => {
 
     <section className="skills-con">
       <Skills/>
+    </section>
+
+    <section className="recent-con">
+      <Recent/>
     </section>
     </>
   )
