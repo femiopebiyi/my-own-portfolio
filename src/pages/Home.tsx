@@ -8,6 +8,7 @@ import Stack from "../components/Stack"
 import Idea from "../components/Idea"
 import Skills from "../components/Skills"
 import Recent from "../components/Recent"
+import Others from "../components/Others"
 
 
 
@@ -63,6 +64,11 @@ const Home = () => {
     <section className="recent-con">
       <Recent/>
     </section>
+
+    <section className="others-con">
+      <Others/>
+    </section>
+
     </>
   )
 }
