@@ -480,8 +480,7 @@ gap: 50px;
 
 .project-img{
   height: 250px;
-  
-  
+  overflow: hidden;
 }
 
 .project-img img{
@@ -489,7 +488,8 @@ gap: 50px;
   height: 100%;
   object-fit: cover;
   /* border: 1px solid pink; */
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transform-origin: center center;
 }
 
 
@@ -521,7 +521,7 @@ gap: 50px;
 .project:hover .project-img img {
 
   filter: blur(4px);
-  
+  transform: scale(1.2);
 }
 .project:hover .visit {
 
