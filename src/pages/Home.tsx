@@ -6,6 +6,7 @@ import reddit from "../assets/images/reddit.png"
 import twitter from "../assets/images/twitter.png"
 import Stack from "../components/Stack"
 import Idea from "../components/Idea"
+import Skills from "../components/Skills"
 
 
 
@@ -52,6 +53,10 @@ const Home = () => {
 
     <section className="idea-con">
       <Idea/>
+    </section>
+
+    <section className="skills-con">
+      <Skills/>
     </section>
     </>
   )

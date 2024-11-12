@@ -280,6 +280,7 @@ gap: 50px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
 }
 
 .insight-con{
@@ -343,4 +344,110 @@ gap: 50px;
   font-family: "Plus Jakarta Sans";
   font-size: 18px;
   font-weight: 600;
+}
+
+.skills-con{
+  border: 1px solid red;
+  padding: 4em 0;
+  background-color: #000F08;
+}
+
+.skills h1{
+  text-align: center;
+  color: #fff;
+  font-size: 2.2rem;
+  opacity: 0.8;
+}
+.specialty{
+  text-align: center;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.skills{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.left, .right{
+  /* border: 1px solid green; */
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+
+
+.skill{
+  width: 100%;
+  /* border: 1px solid blue; */
+  /* height: 100px; */
+  background-color: #2F3435;
+  
+  border-radius: 10px;
+  padding: 1em 0 1em 1em;
+  transition: all 200ms ease-in-out;
+}
+
+.left .skill:hover{
+  transform: translateX(10px);
+}
+.right .skill:hover{
+  transform: translateX(-10px);
+}
+
+.skill-line h3{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+}
+
+.skill-line p{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 400
+}
+
+.skill-box{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid indigo;
+  padding: 3em 5em;
+  background-color: #000402;
+  margin-top: 2.3em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+
+.middle img{
+  width: 20px;
+  height: 20px;
+}
+
+.middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid brown; */
+  width: 40%;
+  
+}
+.stack-icon{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid seagreen; */
+  height: 100px;
+  align-items: center;
+}
+
+.stack-icon div{
+  padding: .5em;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F1F1F;
 }
