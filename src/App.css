@@ -680,3 +680,130 @@ z-index: 100;
   color: #000;
     background: rgb(255, 218, 87);
 }
+
+
+.footer-con{
+
+  background-color: #000F08;
+  padding: 5em 0;
+}
+
+.footer{
+  display: flex;
+  width: 80%;
+  
+  margin: 0 auto;
+  justify-content: space-between;
+  border-bottom: 1px solid #1F2937;
+  padding-bottom: 5em;
+}
+
+.footer > *{
+  width: 24%;
+  
+  color: white;
+  opacity: 0.8;
+}
+
+.first .elevate{
+  margin-top: 1em;
+}
+.email{
+  margin-top: 1em;
+}
+
+.second, .third, .fourth{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.second{
+  padding-left: 5em;
+}
+
+.fourth button{
+  width: 40%;
+  margin-top: 1em;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 14px 24px;
+    border: none;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: #EE3E38;
+    color: #fff;
+    font-family: "Plus Jakarta Sans";
+    opacity: 1;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+  transition: all ease-in-out 200ms;
+}
+
+.footer a:hover{
+  color: #EE3E38;
+}
+
+
+.services,
+.customer,
+.delivery,
+.customer,
+.works,
+.footer input {
+  margin-top: 1em;
+  opacity: 0.8;
+}
+
+.footer input{
+  padding: 1.3em 0;
+  padding-left: .5em;
+  background: transparent;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #EE3E38;
+  opacity: 1;
+}
+
+.footer input::placeholder{
+  color: white;
+  font-family: "Plus Jakarta Sans";
+  opacity: 0.8;
+}
+
+.footer .socials{
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+}
+
+.footer .socials svg{
+  fill: white;
+  width: 26px;
+  transition: all 200ms ease-in-out;
+  opacity: 1;
+}
+
+.footer .socials svg:hover {
+  transform: scale(1.2);
+}
+
+.first h1{
+  display: flex;
+  align-items: center;
+}
+
+#disclaimer{
+  text-align: center;
+  color: white;
+
+  margin-top: 2.3em;
+}

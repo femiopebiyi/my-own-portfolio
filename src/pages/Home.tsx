@@ -9,6 +9,7 @@ import Idea from "../components/Idea"
 import Skills from "../components/Skills"
 import Recent from "../components/Recent"
 import Others from "../components/Others"
+import Footer from "../components/Footer"
 
 
 
@@ -67,6 +68,10 @@ const Home = () => {
 
     <section className="others-con">
       <Others/>
+    </section>
+
+    <section className="footer-con">
+      <Footer/>
     </section>
 
     </>
