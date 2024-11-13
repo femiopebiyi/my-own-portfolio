@@ -309,8 +309,8 @@ gap: 50px;
 }
 
 .left-side{
-  
-  width: 32%;
+  margin-left: 3em;
+  width: 30%;
 }
 .right-side{
   /* border: 3px solid pink; */
@@ -318,6 +318,8 @@ gap: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  opacity: 0.8;
+  padding-left: 3em;
 }
 
 .right-side h1{
