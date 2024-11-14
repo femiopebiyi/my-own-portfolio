@@ -42,8 +42,8 @@ const Footer = () => {
 
       <div className="second">
         <h3>QUICK LINKS</h3>
-        <Link to="services" className="services">Services</Link>
-        <Link to="works" className="works">Works</Link>
+        <Link to="/services" className="services">Services</Link>
+        <Link to="/work" className="works">Works</Link>
       </div>
 
       <div className="third">
