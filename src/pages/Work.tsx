@@ -1,4 +1,3 @@
-import Recent from "../components/Recent"
 
 import cheesecake from "../assets/images/cheesecake.png"
 import restaurant from "../assets/images/restaurant.png"
@@ -6,7 +5,6 @@ import www from "../assets/images/world-wide-web.png"
 import nftSite from "../assets/images/nft-site.png"
 import Footer from "../components/Footer"
 import Others from "../components/Others"
-import quiz from "../assets/images/quizsitw.png"
 import cartSite from "../assets/images/cartsite.png"
 import socialMedia from "../assets/images/social-media.png"
 import portfolio from "../assets/images/portfolio.png"
