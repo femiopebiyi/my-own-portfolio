@@ -1,9 +1,4 @@
 
-import github from "../assets/images/github.png"
-import linkedin from "../assets/images/linkedin-logo.png"
-import whatsapp from "../assets/images/whatsapp.png"
-import reddit from "../assets/images/reddit.png"
-import twitter from "../assets/images/icons8-twitter.svg"
 import { Link } from "react-router-dom"
 
 
