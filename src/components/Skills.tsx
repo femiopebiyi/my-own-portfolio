@@ -86,7 +86,7 @@ const Skills = () => {
             </div>
             <div className="skill">
                 <h3>NodeJs</h3>
-                <p>Building back-end using using JavaScript</p>
+                <p>Building scalable back-end using using JavaScript</p>
             </div>
         </div>
       </div>
