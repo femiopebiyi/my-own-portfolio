@@ -426,7 +426,10 @@ gap: 50px;
 .middle img{
   width: 20px;
   height: 20px;
+  
 }
+
+
 
 .middle{
   display: flex;
@@ -466,7 +469,21 @@ gap: 50px;
     justify-content: center;
     align-items: center;
     background-color: #3D444D;
+animation: blink 2s ease 0s infinite normal none;
+}
 
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .octagon img{
