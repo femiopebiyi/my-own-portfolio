@@ -3,6 +3,7 @@ import cheesecake from "../assets/images/cheesecake.png"
 import restaurant from "../assets/images/restaurant.png"
 import www from "../assets/images/world-wide-web.png"
 import nftSite from "../assets/images/nft-site.png"
+import { useNavigate } from "react-router-dom"
 
 
 const Recent = () => {
@@ -14,6 +15,8 @@ const Recent = () => {
     function openWebsite(siteLink: string) {
   window.open(siteLink, '_blank'); // Opens in a new tab
 }
+
+const navigate = useNavigate()
 
   return (
     <div className="recent">
@@ -95,7 +98,7 @@ const Recent = () => {
       </div>
 
 
-      <div className="view-btn"><button>View All Projects</button></div>
+      <div className="view-btn"><button onClick={()=>{navigate("/work")}}>View All Projects</button></div>
     </div>
   )
 }

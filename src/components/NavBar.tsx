@@ -1,7 +1,12 @@
+import { useNavigate } from "react-router-dom"
 
 
 
 const NavBar = () => {
+
+  const navigate = useNavigate()
+
+
   return (
     
     <header id="nav">
@@ -11,10 +16,10 @@ const NavBar = () => {
       </div>
 
       <div className="navlinks">
-        <a href="">Home</a>
-        <a href="">Work</a>
-        <a href="">Services</a>
-        <a href="">Contact</a>
+        <a href="" onClick={(e)=>{e.preventDefault(); navigate("/")}}>Home</a>
+        <a href="" onClick={(e)=>{e.preventDefault(); navigate("/work")}}>Work</a>
+        <a href="" onClick={(e)=>{e.preventDefault(); navigate("/services")}}>Services</a>
+        <a href="" onClick={(e)=>{e.preventDefault(); navigate("/contact")}}>Contact</a>
       </div>
 
 
