@@ -10,17 +10,22 @@ import Skills from "../components/Skills"
 import Recent from "../components/Recent"
 import Others from "../components/Others"
 import Footer from "../components/Footer"
+import { useNavigate } from "react-router-dom"
 
 
 
 const Home = () => {
+
+  
+  const navigate = useNavigate()
+
   return ( <>
     <section className="home">
       <div className="home-main">
         <div className="words">
             <h1>Bringing your website aspiration to life </h1>
             <p>I am <strong>Opebiyi Oluwafemi</strong>, a full-stack developer, tech enthusiast and blockchain developer</p>
-            <button>Get In Touch</button>
+            <button onClick={()=>{navigate("/contact")}}>Get In Touch</button>
         </div>
 
         <div className="socials">

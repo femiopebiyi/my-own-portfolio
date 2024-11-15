@@ -46,6 +46,11 @@ body{
   box-shadow: inset 200px 0 0 0 #000;
   ;
 }
+
+.logo{
+  cursor: pointer;
+}
+
 .logo h1{
   font-size: 1.5rem;
   letter-spacing: .1em;
@@ -984,7 +989,12 @@ z-index: 100;
    .contact .socials svg{
     fill: black;
     width: 30px;
+    transition:  all ease-in-out 200ms;
    }
+
+.contact .socials svg:hover{
+  transform: scale(1.2);
+}
 
    .contact-right{
     background-color: white;
@@ -1000,6 +1010,7 @@ z-index: 100;
 
    .contact-right p{
     color: #4B5563;
+    margin-bottom: 1.4em;
    }
 
    .ur-con{
