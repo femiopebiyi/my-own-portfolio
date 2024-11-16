@@ -65,7 +65,7 @@ const Contact = () => {
                 </div>
                 <div className="ur-con">
                     <label htmlFor="email">Your mail</label>
-                    <input type="text" name="email" id="" placeholder="example@codebender.com" required/>
+                    <input type="email" name="email" id="" placeholder="example@codebender.com" required/>
                 </div>
                 <div className="ur-con">
                     <label htmlFor="message">Your name</label>
