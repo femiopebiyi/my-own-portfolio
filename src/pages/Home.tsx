@@ -11,6 +11,7 @@ import Recent from "../components/Recent"
 import Others from "../components/Others"
 import Footer from "../components/Footer"
 import { useNavigate } from "react-router-dom"
+import { Typewriter } from "../functions/Typewriter"
 
 
 
@@ -23,7 +24,16 @@ const Home = () => {
     <section className="home">
       <div className="home-main">
         <div className="words">
-            <h1>Bringing your website aspiration to life </h1>
+            <h1><Typewriter 
+            texts={[
+                "Hi, I'm Oluwafemi.",
+                "I am Creative.",
+                "I Love Design.",
+                "I Love to Develop."
+            ]}
+            period={2000}
+            className="my-custom-class"
+        /> </h1>
             <p>I am <strong>Opebiyi Oluwafemi</strong>, a full-stack developer, tech enthusiast and blockchain developer</p>
             <button onClick={()=>{navigate("/contact")}}>Get In Touch</button>
         </div>
