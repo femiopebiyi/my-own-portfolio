@@ -148,21 +148,3 @@ export const Typewriter: React.FC<TypewriterProps> = ({
 };
 
 // Usage example:
-export default function Demo() {
-    const texts = [
-        "Hi, I'm Oluwafemi.",
-        "I am Creative.",
-        "I Love Design.",
-        "I Love to Develop."
-    ];
-
-    return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
-            <Typewriter 
-                texts={texts}
-                period={2000}
-                className="text-4xl font-bold"
-            />
-        </div>
-    );
-}

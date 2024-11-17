@@ -24,7 +24,7 @@ const Home = () => {
     <section className="home">
       <div className="home-main">
         <div className="words">
-            <h1><Typewriter 
+            <Typewriter 
             texts={[
                 "Hi, I'm Oluwafemi.",
                 "I am Creative.",
@@ -33,7 +33,7 @@ const Home = () => {
             ]}
             period={2000}
             className="my-custom-class"
-        /> </h1>
+        />
             <p>I am <strong>Opebiyi Oluwafemi</strong>, a full-stack developer, tech enthusiast and blockchain developer</p>
             <button onClick={()=>{navigate("/contact")}}>Get In Touch</button>
         </div>
