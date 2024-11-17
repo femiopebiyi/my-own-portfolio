@@ -29,7 +29,7 @@ const Home = () => {
         </div>
 
         <div className="socials">
-          <a href="https://wa.me/09066245634" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/+2349066245634" target="_blank" rel="noopener noreferrer">
             <img src={whatsapp} alt="WhatsApp" />
           </a>
           <a href="https://www.linkedin.com/in/opebiyi-femi-005877215/" target="_blank" rel="noopener noreferrer">
