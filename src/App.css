@@ -629,10 +629,11 @@ animation: blink 2s ease 0s infinite normal none;
   padding-bottom: .5em;
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
     background-color: #fff;
     position: relative;
     min-width: 260px;
+    border: none;
 }
 
 .project:hover .project-img img {
@@ -1405,6 +1406,7 @@ z-index: 100;
     .project{
       width: 100%;
       max-width: 750px;
+      border: transparent;
     }
 
     .footer{
@@ -1443,6 +1445,9 @@ z-index: 100;
     .right-side h1{
       font-size: 1.5rem;
      
+    }
+    .recent-h{
+      font-size: .95rem;
     }
 
     .idea-con{
