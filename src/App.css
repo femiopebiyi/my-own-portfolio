@@ -15,7 +15,7 @@ body{
 }
 
 #nav{
-  padding: 16px 0;
+  
   /* border: 1px solid red; */
   height: 100px;
 }
@@ -27,6 +27,7 @@ body{
   width: 75%;
   margin: 0 auto;
   /* border: 1px solid green; */
+  padding: 1em 0;
   
 }
 
