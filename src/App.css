@@ -106,6 +106,74 @@ body{
   background: rgb(255, 218, 87);
 }
 
+
+/* hamnav */
+
+.ham-nav{
+  position: absolute;
+  display: flex;
+  /* border: 1px solid red; */
+  height: 100dvh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #000F08;
+  z-index: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.ham-nav .navlinks{
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+}
+
+.ham-nav a{
+  opacity: 0.9;
+  color: white;
+  border: none;
+}
+
+.ham-nav a.active{
+  border: none !important;
+  box-shadow: none;
+}
+
+.ham-nav .nav-right{
+  flex-direction: column;
+  gap: 20px;
+  /* border: 1px solid red; */
+  width: 100%;
+  align-items: center;
+}
+
+.ham-nav button{
+  background-color: #ED231D !important;
+}
+.ham-nav button:hover{
+    color: white !important;
+}
+
+.ham-nav .socials{
+  /* border: 1px solid white !important; */
+  width: 90% !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  align-items: center !important;
+}
+.ham-nav .socials svg{
+  fill: white !important;
+  width: 20px !important;
+}
+
+.ham-nav .logo h1{
+  color: white !important;
+}
+
+
+
 .home{
   /* border: 2px solid black; */
   background: url(./assets/images/home-bg.png);
@@ -1100,12 +1168,15 @@ z-index: 100;
   /* hamburger */
 
     .hamburger-container {
-      width: 30px;
-      height: 24px;
+      width: 36px;
+      height: 30px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       cursor: pointer;
+      z-index: 100;
+      background-color: white;
+      padding: .4em .4em;
     }
   
     .bar {
@@ -1118,7 +1189,7 @@ z-index: 100;
   
     /* Top bar transforms into X */
     .top-bar.open {
-      transform: rotate(45deg) translate(9.6px, 9.6px);
+      transform: rotate(45deg) translate(5.3px, 5.3px);
     }
   
     /* Middle bar disappears */
@@ -1141,9 +1212,9 @@ z-index: 100;
         }
 
 
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1000px) {
       .navbar{
-        width: 95%;
+        width: 92%;
         /* border: 1px solid red; */
       }
 
@@ -1387,7 +1458,7 @@ z-index: 100;
     }
 
     .doings{
-      border: 1px solid teal;
+      /* border: 1px solid teal; */
       width: 100%;
     }
     .doings p{
