@@ -27,7 +27,7 @@ const Idea = () => {
             <p><img src={checkmark} alt="" />&nbsp;  Expert in modern frontend web development</p>
             <p><img src={checkmark} alt="" />&nbsp;  Unique designs that stands out</p>
             <p><img src={checkmark} alt="" />&nbsp;  Custom-built solutions for your specific goal</p>
-            <p><img src={checkmark} alt="" />&nbsp;  Optimized for speed and security from th ground up</p>
+            <p><img src={checkmark} alt="" />&nbsp;  Optimized for speed and security from the ground</p>
             </div>
         </div>
     </div>

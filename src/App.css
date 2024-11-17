@@ -444,6 +444,7 @@ gap: 50px;
   font-family: "Plus Jakarta Sans";
   font-size: 18px;
   font-weight: 600;
+  /* border: 1px solid red; */
 }
 
 .skills-con{
@@ -1454,9 +1455,14 @@ z-index: 100;
       padding: 3em 0;
     }
 
+
+    .ability{
+      margin-top: 1.5em;
+    }
     .ability p{
       gap: 5px;
-      font-size: .8rem;
+      font-size: .95rem;
+      margin-top: 1em;
     }
 
     #disclaimer{
