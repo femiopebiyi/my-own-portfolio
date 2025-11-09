@@ -21,7 +21,7 @@ const LoadingScreen = () => {
             ease: "easeInOut"
           }}
         >
-          <h1>OF</h1>
+          <h1>FEMI</h1>
         </motion.div>
         <motion.div
           className="loading-bar"

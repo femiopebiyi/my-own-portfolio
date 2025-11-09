@@ -22,7 +22,7 @@ const ThemeToggle = () => {
         <motion.div
           className="toggle-slider"
           animate={{
-            x: theme === 'dark' ? 16 : 0,
+            x: theme === 'dark' ? 17 : 0,
           }}
           transition={{
             type: "spring",

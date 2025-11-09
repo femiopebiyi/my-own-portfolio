@@ -11,7 +11,7 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "John Doe",
+    name: "Babatunde Adewale",
     role: "CTO",
     company: "Tech Solutions Inc.",
     text: "Oluwafemi delivered an exceptional web application that exceeded our expectations. His expertise in React and blockchain development is outstanding.",
