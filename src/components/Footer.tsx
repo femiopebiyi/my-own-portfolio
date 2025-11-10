@@ -57,10 +57,12 @@ const Footer = () => {
         <h3>SUBSCRIBE TO NEWSLETTER</h3>
         <input type="email" placeholder="Enter your email"/>
         <button>Subscribe</button>
-        <div className="footer-theme-toggle">
-          <ThemeToggle />
-        </div>
+        
       </div>
+    </div>
+
+    <div className="standalone-theme-toggle">
+      <ThemeToggle />
     </div>
 
     <p id="disclaimer">© Copyright 2024, All Rights Reserved by Opebiyi</p>

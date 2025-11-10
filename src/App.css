@@ -885,11 +885,11 @@ z-index: 100;
     opacity: 1;
 }
 
-.footer-theme-toggle {
+.fourth .theme-toggle-wrapper {
   margin-top: 1.5em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
 }
 
 .footer a{
@@ -953,6 +953,23 @@ z-index: 100;
 .first h1{
   display: flex;
   align-items: center;
+}
+
+.standalone-theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto 0;
+  padding: 0;
+}
+
+.standalone-theme-toggle .theme-toggle-wrapper {
+  all: initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  padding: 0 8px;
 }
 
 #disclaimer{
@@ -2481,6 +2498,22 @@ body {
     padding: 0 6px;
   }
 
+  .fourth .theme-toggle-wrapper {
+    margin-top: 1.5em;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .standalone-theme-toggle .theme-toggle-wrapper {
+    all: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    padding: 0 6px;
+  }
+
   .theme-toggle-switch {
     width: 48px;
     height: 30px;
@@ -2561,6 +2594,22 @@ body {
 /* Extra Small Devices - Component Specific */
 @media (max-width: 360px) {
   .theme-toggle-wrapper {
+    margin: 0 3px;
+    padding: 0 4px;
+  }
+
+  .fourth .theme-toggle-wrapper {
+    margin-top: 1.5em;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .standalone-theme-toggle .theme-toggle-wrapper {
+    all: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 3px;
     padding: 0 4px;
   }

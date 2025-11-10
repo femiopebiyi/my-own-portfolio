@@ -12,9 +12,9 @@ const ThemeToggle = () => {
       if (width <= 360) {
         setSlideDistance(18); // 44px container - 22px slider - 4px padding = 18px
       } else if (width <= 1000) {
-        setSlideDistance(20); // 48px container - 26px slider - 2px = 20px
+        setSlideDistance(18); // 48px container - 26px slider - 4px padding = 18px
       } else {
-        setSlideDistance(24); // 56px container - 28px slider - 4px = 24px
+        setSlideDistance(24); // 56px container - 28px slider - 4px padding = 24px
       }
     };
 
