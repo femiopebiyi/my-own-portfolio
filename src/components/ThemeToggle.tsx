@@ -1,9 +1,27 @@
-import { useContext } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { UIContext } from '../assets/contextAPI/UIContext';
 import { motion } from 'framer-motion';
 
 const ThemeToggle = () => {
   const { theme, toggleTheme } = useContext(UIContext);
+  const [slideDistance, setSlideDistance] = useState(24);
+
+  useEffect(() => {
+    const updateSlideDistance = () => {
+      const width = window.innerWidth;
+      if (width <= 360) {
+        setSlideDistance(18); // 44px container - 22px slider - 4px padding = 18px
+      } else if (width <= 1000) {
+        setSlideDistance(20); // 48px container - 26px slider - 2px = 20px
+      } else {
+        setSlideDistance(24); // 56px container - 28px slider - 4px = 24px
+      }
+    };
+
+    updateSlideDistance();
+    window.addEventListener('resize', updateSlideDistance);
+    return () => window.removeEventListener('resize', updateSlideDistance);
+  }, []);
 
   return (
     <div className="theme-toggle-wrapper">
@@ -22,7 +40,7 @@ const ThemeToggle = () => {
         <motion.div
           className="toggle-slider"
           animate={{
-            x: theme === 'dark' ? 17 : 0,
+            x: theme === 'dark' ? slideDistance : 0,
           }}
           transition={{
             type: "spring",

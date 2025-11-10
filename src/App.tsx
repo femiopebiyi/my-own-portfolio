@@ -13,6 +13,7 @@ import LoadingScreen from './components/LoadingScreen'
 const LazyHome = lazy(() => import('./pages/Home'))
 const LazyWork = lazy(() => import('./pages/Work'))
 const LazyContact = lazy(() => import('./pages/Contact'))
+const LazyServices = lazy(() => import('./pages/Services'))
 const LazyNotFound = lazy(() => import('./pages/NotFound'))
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
               <Routes>
                 <Route index element = {<LazyHome/>}/>
                 <Route path='/work' element={<LazyWork/>}/>
+                <Route path='/services' element={<LazyServices/>}/>
                 <Route path='/contact' element={<LazyContact/>}/>
                 <Route path='*' element={<LazyNotFound/>}/>
               </Routes>
