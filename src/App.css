@@ -10,8 +10,20 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+}
+
 body{
   font-family: "Poppins";
+}
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 #nav{
@@ -179,12 +191,14 @@ body{
   /* border: 2px solid black; */
   background: url(./assets/images/home-bg.png);
   background-position-x: center;
-
+  width: 100%;
+  max-width: 100%;
   height: calc(100dvh - 100px);
   display: flex;
   align-items: center;
 justify-content: center;  
 gap: 50px;
+  overflow-x: hidden;
 }
 
 .home-main{
@@ -1877,6 +1891,12 @@ z-index: 100;
   --shadow: rgba(255, 255, 255, 0.1);
 }
 
+/* Prevent horizontal overflow on all sections */
+section, div[class*="-con"], div[class*="-section"] {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
@@ -2237,7 +2257,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: var(--bg-primary);
   display: flex;
