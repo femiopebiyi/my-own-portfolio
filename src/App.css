@@ -955,6 +955,11 @@ z-index: 100;
   align-items: center;
 }
 
+.footer-logo-svg {
+  fill: var(--text-primary);
+  stroke: var(--text-primary);
+}
+
 .standalone-theme-toggle {
   display: flex;
   justify-content: center;
@@ -1824,15 +1829,6 @@ z-index: 100;
       font-size: 1.5rem;
     }
 
-    /* Easter Egg */
-    .easter-egg-modal h2 {
-      font-size: 1.3rem;
-    }
-
-    .easter-egg-modal p {
-      font-size: 0.9rem;
-    }
-
     /* 404 Page */
     .not-found h1 {
       font-size: 3rem;
@@ -2176,13 +2172,13 @@ body {
 .timeline-section {
   background: var(--bg-tertiary);
   padding: 5em 2em;
-  color: var(--text-inverse);
 }
 
 .timeline-heading {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  color: var(--text-primary) !important;
 }
 
 .timeline-subheading {
@@ -2190,6 +2186,7 @@ body {
   font-size: 1.2rem;
   opacity: 0.8;
   margin-bottom: 4rem;
+  color: var(--text-primary) !important;
 }
 
 .timeline-container {
@@ -2316,52 +2313,6 @@ body {
   margin-top: 1rem;
   color: var(--text-secondary);
   font-size: 1.1rem;
-}
-
-/* ============================================
-   EASTER EGG
-   ============================================ */
-.easter-egg {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10000;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 3em;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  color: white;
-}
-
-.easter-egg-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.easter-egg-content p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-
-.achievement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.trophy {
-  font-size: 3rem;
-  animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
 }
 
 /* ============================================
@@ -2729,22 +2680,6 @@ body {
   .loading-spinner {
     width: 40px;
     height: 40px;
-  }
-
-  /* Easter Egg Modal */
-  .easter-egg-modal {
-    padding: 1.5em;
-    max-width: calc(100vw - 2em);
-  }
-
-  .easter-egg-modal h2 {
-    font-size: 1.2rem;
-  }
-
-  .easter-egg-close {
-    width: 30px;
-    height: 30px;
-    font-size: 1.2rem;
   }
 }
 

@@ -5,7 +5,6 @@ import NavBar from './components/NavBar'
 import { UIContextProvider } from './assets/contextAPI/UIContext'
 import { HelmetProvider } from 'react-helmet-async'
 import ScrollProgress from './components/ScrollProgress'
-import EasterEgg from './components/EasterEgg'
 import { lazy, Suspense } from 'react'
 import LoadingScreen from './components/LoadingScreen'
 
@@ -24,7 +23,6 @@ function App() {
         <UIContextProvider>
           <Router>
             <ScrollProgress />
-            <EasterEgg />
             <NavBar/>
             <Suspense fallback={<LoadingScreen />}>
               <Routes>

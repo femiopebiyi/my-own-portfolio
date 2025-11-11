@@ -24,31 +24,65 @@ const Contact = () => {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
+    // Debug: Check if env variables are loaded
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    console.log('EmailJS Config:', {
+      serviceId: serviceId ? 'Set ✓' : 'Missing ✗',
+      templateId: templateId ? 'Set ✓' : 'Missing ✗',
+      publicKey: publicKey ? 'Set ✓' : 'Missing ✗'
+    });
+
+    if (!serviceId || !templateId || !publicKey) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Email configuration error. Please contact the site owner.'
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
-      // Initialize EmailJS with your public key
-      emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
-      
-      await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+      const result = await emailjs.send(
+        serviceId,
+        templateId,
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_name: 'Oluwafemi',
-        }
+          to_name: 'Opebiyi',
+          email: 'opebiyibiodun10@gmail.com',
+          reply_to: formData.email,
+        },
+        publicKey
       );
 
+      console.log('Email sent successfully:', result);
       setSubmitStatus({
         type: 'success',
         message: 'Message sent successfully! I\'ll get back to you soon.'
       });
       setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      console.error('Email error:', error);
+    } catch (error: any) {
+      console.error('Email error details:', {
+        error,
+        message: error?.text || error?.message,
+        status: error?.status
+      });
+      
+      let errorMessage = 'Failed to send message. Please try again or email me directly.';
+      
+      if (error?.text?.includes('Invalid')) {
+        errorMessage = 'Invalid email configuration. Please contact the site owner.';
+      } else if (error?.status === 412) {
+        errorMessage = 'Email template not found. Please contact the site owner.';
+      }
+      
       setSubmitStatus({
         type: 'error',
-        message: 'Failed to send message. Please try again or email me directly.'
+        message: errorMessage
       });
     } finally {
       setIsSubmitting(false);
